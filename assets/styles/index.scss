@@ -1,0 +1,55 @@
+@import "variables";
+@import "settings";
+@import "components/header";
+@import "components/titles";
+@import "components/circles";
+@import "components/kirsanov";
+@import "components/modal";
+@import "components/transitions";
+@import "components/contacts";
+@import "components/catalog";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  width: 100%;
+  font-size: 16px;
+  font-family: $fontApple;
+  font-weight: 400;
+  background: $black;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 76px);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.section__title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding: 32px;
+}
+
+.grey-text {
+  font-size: 16px;
+  color: $colorText;
+}
+
+.text {
+  color: $black;
+  font-size: 18px;
+}

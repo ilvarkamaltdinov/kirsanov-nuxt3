@@ -1,0 +1,23 @@
+.modal{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  padding: 32px 16px 16px;
+  color: $black;
+  border-radius: 4px;
+}
+.close-modal{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: .24s;
+  &:hover{
+    transform: scale(1.1);
+    opacity: .8;
+  }
+}

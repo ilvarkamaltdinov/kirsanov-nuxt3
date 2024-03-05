@@ -1,0 +1,48 @@
+.circles {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: calc(100vh - 180px);
+  z-index: 2;
+  overflow: hidden;
+  left: 0;
+}
+
+.circle {
+  position: absolute;
+  cursor: pointer;
+  z-index: 4;
+  box-shadow: 0 0 16px rgba(0, 0, 0, .48);
+  border-radius: 500px;
+  transition: .24s;
+  opacity: 0;
+
+  &.circle--show {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 24px rgba(0, 0, 0, .88);
+  }
+
+  &.clicked {
+    pointer-events: none;
+    animation: click .32s linear;
+    animation-fill-mode: forwards
+  }
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

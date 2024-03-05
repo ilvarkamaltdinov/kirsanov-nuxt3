@@ -1,0 +1,127 @@
+.catalog {
+
+}
+
+.catalog-title {
+  margin-top: 64px;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 32px;
+  @media screen and (max-width: 720px) {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+}
+.catalog__item-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog__item-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog__list {
+  display: flex;
+  margin-top: 32px;
+  width: 100%;
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+  background: rgba(0,0,0,.8);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  width: 20%;
+  min-width: 260px;
+  margin-right: 8px;
+  margin-bottom: 32px;
+  background: #fff;
+  padding: 16px;
+  color: $black;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, .64);
+  z-index: 12;
+  position: relative;
+  transition: .24s;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 32px rgba(141, 141, 141, 0.32);
+    .catalog__item-info-circle{
+      transform: scale(1);
+    }
+  }
+}
+.catalog__item-info-circle{
+  width: 32px;
+  height: 32px;
+  background: $green;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  position: absolute;
+  z-index: 2;
+  bottom: 6px;
+  right: 6px;
+  transition: .24s;
+  transform: scale(.5);
+}
+.catalog__item-button{
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $black;
+  border-radius: 4px;
+}
+.catalog__item-brand {
+  font-size: 10px;
+  color: #6e6e6e;
+  margin-left: auto;
+}
+.catalog__item-short-description{
+  font-size: 14px;
+  color: #6e6e6e;
+  margin-top: 4px;
+}
+.catalog__item-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.catalog__item-title-type {
+  margin-right: 4px;
+  font-size: 16px;
+}
+
+.catalog__item-title-model {
+  font-weight: bold;
+  transition: .24s;
+}
+
+.catalog__item-image-wrap {
+  margin-top: 8px;
+}
+.catalog__item-line{
+  display: flex;
+  align-items: center;
+
+}
+.catalog__item-price{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+.catalog__item-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}

@@ -1,0 +1,15 @@
+.main{
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 24px);
+  margin-top: 24px;
+  z-index: 10;
+  pointer-events: none;
+}
+.kirsanov {
+  width: 720px;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
